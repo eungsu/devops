@@ -40,6 +40,20 @@
   + 사용자1 : AdministratorAccess
   + 사용자2 : AmazonS3FullAccess
   + 사용자3 : AmazonS3ReadOnlyAccess AmazoneEC2ReadOnlyAccess
+- 사용자의 종류
+  + 루트 사용자
+    + 결재 관리를 포함한 계정의 모든 권한을 가지고 있는 사용자
+    + 관리 목적 이외에 다른 용도로 사용하지 않는 것을 권장
+    + 탈취 되었을 때 복구가 매우 어렵다 -> MFA를 설정하는 것을 권장함
+    + MFA(Multi-factor authentication) - 일회용 패스워드를 생성하여 로그인
+  + IAM 사용자
+    + IAM를 통해 생성해서 사용하는 사용
+    + 한 사람 혹은 하나의 애플리케이션을 의미
+    + 설정 시 콘솔 로그인 권한 부여 가능
+    + 설정 시 AWS 서비스를 이용할 수 있음
+      + Access Key : 사용자 이름
+      + Secret Access Key : 비밀번호
+    + AdminAccess를 부여하더라도 루트 사용자로 별도의 설정을 하지 않으면 Billing 기능을 사용할 수 없
 
 ### IAM 그룹(Groups)
 - 사용자가 적을 때는 직접 개별 사용자에게 권한을 설정하는 것이 더 직관적이고 편할 수 있지만, 사용자가 많아지면 관리하기가 불편해진다. 따라서 그룹 개념을 사용한다.
