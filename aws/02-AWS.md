@@ -156,7 +156,7 @@ AWS는 전 세계적으로 분포한 데이터 센터에서 200개가 넘는 완
 - 입찰가격이 넘어가면 자동으로 Spot 인스턴스는 다시 종료된다.
 
 ## WAS의 구조
-<img src="/images/1.png" width="506px" height="283px" title="AWS 구조"/>
+<img src="/images/aws/1.png" width="506px" height="283px" title="AWS 구조"/>
 
 ### 가용영역, 리전, 엣지 로케이션
 리전(Region)과 가용영역(Availability zone)은 클라우드 인프라 이해를 위한 가장 기본적인 요소다.
